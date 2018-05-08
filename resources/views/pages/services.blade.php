@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>LSAPP</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-    </head>
-    <body>
-    <h1>welcome to services</h1>
-    <p>this is laravel project of mine</p>
-
-    </body>
-</html>
+@extends('layouts.app')
+@section('content')
+    <h1>{{$title}}</h1>
+    @if(count($services)>0)
+    <ul>
+        @foreach($services as $service)
+        <li>{{$service}}</li>
+        @endforeach
+    </ul>
+    @endif
+@endsection

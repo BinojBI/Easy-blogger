@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>LSAPP</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-    </head>
-    <body>
-    <h1>welcome to laravel</h1>
+@extends('layouts.app')
+@section('content')
+    <h1>{{$title}}</h1>
     <p>this is laravel project of mine</p>
+@endsection
 
-    </body>
-</html>
